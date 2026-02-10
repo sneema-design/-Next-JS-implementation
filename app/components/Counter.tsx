@@ -2,14 +2,16 @@
 
 import { useState } from "react"
 
-export default function counter() {
+export default function Counter() {
     const  [count,setCount] = useState(0)
     return(
         <div>
 
             <button onClick={()=>(setCount(count+1))}>
+                <br/>
             +
         </button>
+        <br/>
         {count}
         </div>
         
